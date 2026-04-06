@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阿达西 - 无人机编程教师</title>
+    <style>
+        :root {
+            --bg: #fafafa;
+            --text: #1a1a1a;
+            --accent: #2d5a4a;
+            --muted: #666;
+            --border: #e0e0e0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.7;
+            color: var(--text);
+            background: var(--bg);
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+        
+        .profile {
+            display: flex;
+            gap: 32px;
+            margin-bottom: 48px;
+            align-items: flex-start;
+        }
+        
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent), #4a7c6f);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 48px;
+            flex-shrink: 0;
+        }
+        
+        .profile-info h1 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+        
+        .profile-info .title {
+            color: var(--muted);
+            font-size: 15px;
+            margin-bottom: 16px;
+        }
+        
+        .profile-info .bio {
+            color: var(--text);
+            font-size: 15px;
+            max-width: 480px;
+        }
+        
+        section {
+            margin-bottom: 40px;
+        }
+        
+        h2 {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--muted);
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        
+        .links a {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 15px;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+        
+        .links a:hover {
+            border-bottom-color: var(--accent);
+        }
+        
+        .project-list {
+            list-style: none;
+        }
+        
+        .project-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .project-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .project-list a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .project-list a:hover {
+            color: var(--accent);
+        }
+        
+        .project-list .desc {
+            font-size: 14px;
+            color: var(--muted);
+            margin-top: 4px;
+        }
+        
+        .teaching-list {
+            list-style: none;
+        }
+        
+        .teaching-list li {
+            padding: 8px 0;
+            font-size: 15px;
+        }
+        
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 8px;
+        }
+        
+        .tech-tags span {
+            font-size: 12px;
+            padding: 4px 10px;
+            background: #f0f0f0;
+            border-radius: 4px;
+            color: var(--muted);
+        }
+        
+        footer {
+            margin-top: 60px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            font-size: 13px;
+        }
+        
+        @media (max-width: 540px) {
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .profile-info {
+                width: 100%;
+            }
+            
+            .profile-info .bio {
+                max-width: 100%;
+            }
+            
+            .links {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="profile">
+        <div class="avatar">🚁</div>
+        <div class="profile-info">
+            <h1>阿达西</h1>
+            <p class="title">职业本科无人机专任教师</p>
+            <p class="bio">专注无人机编程与智能巡检。致力于将前沿 AI 技术应用于森林草原火点检测，让无人机成为守护绿色家园的智能眼睛。</p>
+        </div>
+    </div>
+
+    <section>
+        <h2>研究方向</h2>
+        <p>无人机智能系统 · 计算机视觉 · 边缘计算部署</p>
+        <div class="tech-tags">
+            <span>YOLOv8</span>
+            <span>PX4</span>
+            <span>Jetson Nano</span>
+            <span>深度学习</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>项目</h2>
+        <ul class="project-list">
+            <li>
+                <a href="https://github.com/AdaxiFPV/wildfire-drone-detection" target="_blank">Wildfire Drone Detection</a>
+                <p class="desc">基于 YOLOv8 的森林草原火点巡检系统，支持 Jetson Nano 边缘部署</p>
+            </li>
+            <li>
+                <a href="https://github.com/AdaxiFPV" target="_blank">更多项目 →</a>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>教学</h2>
+        <ul class="teaching-list">
+            <li>无人机编程与应用</li>
+            <li>无人机系统集成</li>
+            <li>无人机地面站开发</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>联系方式</h2>
+        <div class="links">
+            <a href="https://github.com/AdaxiFPV" target="_blank">GitHub</a>
+            <a href="mailto:">Email</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 阿达西 · 职业本科无人机教师</p>
+    </footer>
+</body>
+</html>
