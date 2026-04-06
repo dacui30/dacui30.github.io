@@ -5,7 +5,7 @@
 
   <title>
     
-      About | Da Cui
+      Projects | Da Cui
     
   </title>
 
@@ -28,13 +28,8 @@ body {
 }
 
 @media (max-width: 30em) {
-  body {
-    font-size: 14px;
-    line-height: 1.5rem;
-  }
-  body h1 {
-    font-size: 1.5rem;
-  }
+  body { font-size: 14px; line-height: 1.5rem; }
+  body h1 { font-size: 1.5rem; }
 }
 
 h1 { font-size: 2rem; }
@@ -45,31 +40,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #333;
 }
 
-a {
-  text-decoration: underline;
-  color: #333;
-}
+a { text-decoration: underline; color: #333; }
+a:hover { color: black; border-bottom: none; }
 
-a:hover {
-  color: black;
-  border-bottom: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-
-blockquote {
-  margin: 10px 20px 10px;
-  padding: 0px 15px;
-  border-left: 0.25em solid #ccc;
-  color: #999;
-  line-height: 1.5;
-}
-
-hr { border-top: 1px solid #ccc; }
+img { max-width: 100%; height: auto; border-radius: 5px; }
 
 .container {
   margin-left: auto;
@@ -78,9 +52,7 @@ hr { border-top: 1px solid #ccc; }
 }
 
 @media (max-width: 768px) {
-  .container {
-    width: 90vw;
-  }
+  .container { width: 90vw; }
 }
 
 .masthead {
@@ -110,11 +82,11 @@ hr { border-top: 1px solid #ccc; }
 
 .post-date {
   display: block;
-  margin-top:3px;
+  margin-top: 3px;
   margin-bottom: 1rem;
   color: #9a9a9a;
   font-family: 'Quattrocento Sans', sans-serif;
-  font-size:0.8rem;
+  font-size: 0.8rem;
 }
 
 .footer {
@@ -123,53 +95,23 @@ hr { border-top: 1px solid #ccc; }
   margin: 2rem;
 }
 
-.footer a {
-  color: #999;
-  padding: 10px;
-  text-decoration: none;
-}
-
+.footer a { color: #999; padding: 10px; text-decoration: none; }
 .footer a:hover { color: #333; }
 
-.menu {
-  padding-top: 0.5rem;
-  display: block;
-}
-
+.menu { padding-top: 0.5rem; display: block; }
 .menu-content { float: left; }
-
-.menu-content a {
-  color: #999;
-  font-size: 1rem;
-  padding-right: 10px;
-}
-
+.menu-content a { color: #999; font-size: 1rem; padding-right: 10px; }
 .social-icons { float: right; }
-
-.social-icons a {
-  color: #999;
-  font-size: 1rem;
-}
+.social-icons a { color: #999; font-size: 1rem; }
 
 @media (max-width: 30em) {
-  .social-icons {
-    float: left;
-    padding-top: 0px;
-  }
-  .menu-content {
-    margin-bottom: 5px;
-  }
+  .social-icons { float: left; padding-top: 0px; }
+  .menu-content { margin-bottom: 5px; }
 }
-
-.aligncenter { text-align: center; }
 
 .fa-envelope, .fa-github {
   padding: 5px;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition: .5s;
+  -o-transition:.5s; -ms-transition:.5s; -moz-transition:.5s; -webkit-transition:.5s; transition: .5s;
 }
 
 .fa-envelope:hover { color: #f39c12; }
@@ -188,53 +130,34 @@ hr { border-top: 1px solid #ccc; }
     <small class="masthead-subtitle">Xing'an Vocational and Technical University</small>
     <div class="menu">
   <nav class="menu-content">
-    
       <a href="https://dacui30.github.io/teaching.html">Teaching</a>
-    
       <a href="https://dacui30.github.io/projects.html">Projects</a>
-    
       <a href="https://dacui30.github.io/contact.html">Contact</a>
-    
   </nav>
   <nav class="social-icons">
-    
       <a href="https://www.github.com/AdaxiFPV" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
-    
       <a href="mailto:" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i></a>
-    
   </nav>
 </div>
-
   </h3>
 </header>
 
 
-    <div class="post-container">
-      <p>I am currently a full-time faculty member specializing in UAV (Unmanned Aerial Vehicle) programming at Xing'an Vocational and Technical University.</p>
-
-<p>My main research focuses on intelligent UAV systems, applying computer vision and edge computing to drone platforms for forest and grassland wildfire detection.</p>
-
-<p>I am currently developing the <a href="https://github.com/AdaxiFPV/wildfire-drone-detection">Wildfire Drone Detection</a> project — a wildfire patrol system based on YOLOv8, supporting Jetson Nano edge deployment with the Holybro X500 (PX4) hardware platform.</p>
-
-<div>
-<p class="aligncenter">
-<center>
-<img width="460" src="assets/img/me.jpg" frameborder="0" allowfullscreen="" />
-</center>
-</p>
-</div>
-
+    <div class="posts">
+      <h1>
+        <a href="https://github.com/AdaxiFPV/wildfire-drone-detection">Wildfire Drone Detection</a>
+      </h1>
+      <p>
+        A wildfire patrol system based on YOLOv8, supporting Jetson Nano edge deployment with the Holybro X500 (PX4) hardware platform. The system is designed for real-time forest and grassland fire detection using aerial imagery.
+        <span class="post-date"><i class="fa fa-calendar" aria-hidden="true"></i> 2025 - Present</span>
+      </p>
     </div>
 
     <footer class="footer">
-    
       <a href="https://www.github.com/AdaxiFPV" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
-    
       <a href="mailto:" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i></a>
-    
   <div class="post-date"><a href="https://dacui30.github.io">Da Cui | Xing'an Vocational and Technical University</a></div>
 </footer>
-
 
   </div>
 
